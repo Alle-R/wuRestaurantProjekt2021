@@ -1,0 +1,28 @@
+body {
+    margin: 5px;
+}
+
+#Huvudsida {
+    display: grid;
+    height: ;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    row-gap: ;
+    column-gap: ;
+    grid-template-areas: 
+    'h h h h h h'
+    ;
+}
+
+header {
+    grid-area: h;
+    background-color: black;
+    grid-template-areas: 
+    'n n n'
+    ;
+}
+
+nav {
+    grid-area: n;
+    background-color:;
+}
