@@ -11,6 +11,11 @@ body {
     column-gap: ;
     grid-template-areas: 
     'h h h h h h'
+    'm m m m m m'
+    'm m m m m m'
+    's1 s1 s1 s2 s2 s2'
+    's1 s1 s1 s2 s2 s2'
+    'f f f f f f'
     ;
 }
 
@@ -25,4 +30,8 @@ header {
 nav {
     grid-area: n;
     background-color:;
+}
+
+main#Huvudsida {
+    
 }
