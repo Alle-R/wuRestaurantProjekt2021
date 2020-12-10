@@ -22,12 +22,13 @@ body {
 
 #Menysida {
     display: grid;
-    height: ;
+    height: 500px;
+    width: auto;
     grid-template-columns: ;
-    grid-template-rows: ;
-    row-gap: ;
-    column-gap: ;
-    grid-template-areas: ;
+    grid-template-rows: auto;
+    row-gap: 2px;
+    column-gap: 3px;
+    grid-template-areas: 
     'h h h h h h h h'
     'as1 as1 as1 s1 s1 s1 s1 s1'
     'as1 as1 as1 s1 s1 s1 s1 s1'
@@ -36,25 +37,29 @@ body {
     'as2 as2 as2 s2 s2 s2 s2 s2'
     'as2 as2 as2 s2 s2 s2 s2 s2'
     'f f f f f f f f'
+    ;
 }
 
 #Recensionsida {
     display: grid;
-    height: ;
+    height: 500px;
+    width: auto;
     grid-template-columns: ;
-    grid-template-rows: ;
-    row-gap: ;
-    column-gap: ;
-    grid-template-areas: ;
+    grid-template-rows: auto;
+    row-gap: 2px;
+    column-gap: 3px;
+    grid-template-areas: 
     'h h h h'
     'ar1 ar1 ar2 ar2'
     'ar1 ar1 ar2 ar2'
     'ar3 ar3 ar4 ar4'
     'ar3 ar3 ar4 ar4'
     'f f f f'
+    ;
 }
 
 header {
+    display: flex;
     grid-area: h;
     background-color: orange;
     grid-template-areas: 
@@ -64,7 +69,9 @@ header {
 
 nav {
     grid-area: n;
-    background-color:green
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     ;
 }
 
@@ -86,4 +93,54 @@ nav {
 #Huvudsida footer {
     grid-area: f;
     background-color: purple;
+}
+
+#Menysida #as1 {
+    grid-area: as1;
+    background-color: red;
+}
+
+#Menysida #as2 {
+    grid-area: as2;
+    background-color: orange;
+}
+
+#Menysida #s1 {
+    grid-area: s1;
+    background-color: red;
+}
+
+#Menysida #s2 {
+    grid-area: s2;
+    background-color: orange;
+}
+
+#Menysida footer {
+    grid-area: f;
+    background-color: blue;
+}
+
+#Recensionsida #ar1 {
+    grid-area: ar1;
+    background-color: blue;
+}
+
+#Recensionsida #ar2 {
+    grid-area: ar2;
+    background-color: orange;
+}
+
+#Recensionsida #ar3 {
+    grid-area: ar3;
+    background-color: blue;
+}
+
+#Recensionsida #ar4 {
+    grid-area: ar4;
+    background-color: orange;
+}
+
+#Recensionsida footer {
+    grid-area: f;
+    background-color: blue;
 }
