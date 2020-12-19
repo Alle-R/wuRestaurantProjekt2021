@@ -3,15 +3,14 @@ body {
 }
 
 #Huvudsida {
-    background-image: url(/img/Vitt\ stenkakel\ resturangsida.jpg);
+    background-image: url(/img/Vitt-stenkakel-resturangsida.jpg);
     display: grid;
     height: auto;
     width: auto;
-    grid-auto-columns: 75px, 150px, 150px, 150px, 150px, 75px;
+    grid-auto-columns: auto;
     grid-template-rows: auto;
     row-gap:3px ;
     column-gap:7px ;
-    background-image: ;
     grid-template-areas: 
     'h h h h h h'
     'm m m m m m'
@@ -23,13 +22,13 @@ body {
 }
 
 #Menysida {
+    background-image: url(/img/wood-resturang-sida.jpg);
     display: grid;
-    height: 500px;
+    height: auto;
     width: auto;
-    grid-template-columns: ;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    row-gap: 2px;
-    column-gap: 3px;
+    row-gap: 5px;
     grid-template-areas: 
     'h h h h h h h h'
     'as1 as1 as1 s1 s1 s1 s1 s1'
@@ -43,13 +42,15 @@ body {
 }
 
 #Recensionsida {
+    background-image: url(/img/field-resturang-sida.jpg);
     display: grid;
-    height: 500px;
+    height: 600px;
     width: auto;
-    grid-template-columns: ;
+    padding: 0%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    row-gap: 2px;
-    column-gap: 3px;
+    row-gap: 7px;
+    column-gap: 7px;
     grid-template-areas: 
     'h h h h'
     'ar1 ar1 ar2 ar2'
@@ -107,50 +108,78 @@ nav {
 
 #Menysida #as1 {
     grid-area: as1;
-    background-color: red;
+    grid-template-areas: 
+    'asart1 asart1 asart1'
+    ;
+}
+
+#Menysida h1 {
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#Menysida #asart1 {
+    grid-area: asart1;
+    align-items: center;
+    justify-content: center;
 }
 
 #Menysida #as2 {
     grid-area: as2;
-    background-color: orange;
+    grid-template-areas: 
+    'asart2 asart2 asart2'
+    ;
+}
+
+#Menysida #asart2 {
+    grid-area: asart2;
 }
 
 #Menysida #s1 {
     grid-area: s1;
-    background-color: red;
+    background-color: black;
 }
 
 #Menysida #s2 {
     grid-area: s2;
-    background-color: orange;
+    background-color: black;
 }
 
 #Menysida footer {
     grid-area: f;
-    background-color: blue;
+    background-color: black;
+}
+
+#Menysida li {
+    color: white;
 }
 
 #Recensionsida #ar1 {
     grid-area: ar1;
-    background-color: blue;
 }
 
 #Recensionsida #ar2 {
     grid-area: ar2;
-    background-color: orange;
 }
 
 #Recensionsida #ar3 {
     grid-area: ar3;
-    background-color: blue;
 }
 
 #Recensionsida #ar4 {
     grid-area: ar4;
-    background-color: orange;
 }
 
 #Recensionsida footer {
     grid-area: f;
-    background-color: blue;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#Recensionsida h5 {
+    color: white;
 }
