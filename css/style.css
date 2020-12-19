@@ -3,13 +3,15 @@ body {
 }
 
 #Huvudsida {
+    background-image: url(/img/Vitt\ stenkakel\ resturangsida.jpg);
     display: grid;
-    height: 500px;
+    height: auto;
     width: auto;
-    grid-auto-columns: 10px, 20px, 30px, 40px, 50px, 60px;
+    grid-auto-columns: 75px, 150px, 150px, 150px, 150px, 75px;
     grid-template-rows: auto;
-    row-gap:2px ;
-    column-gap:3px ;
+    row-gap:3px ;
+    column-gap:7px ;
+    background-image: ;
     grid-template-areas: 
     'h h h h h h'
     'm m m m m m'
@@ -61,7 +63,6 @@ body {
 header {
     display: flex;
     grid-area: h;
-    background-color: orange;
     grid-template-areas: 
     'n n n'
     ;
@@ -76,23 +77,32 @@ nav {
 }
 
 #Huvudsida main {
+    display: flex;
     grid-area: m;
-    background-color: yellow;
+    justify-content: center;
 }
 
 #Huvudsida #s1 {
     grid-area: s1;
-    background-color: green;
+    background-color: black;
 }
 
 #Huvudsida #s2 {
     grid-area: s2;
-    background-color: orange;
+    background-color: black;
+}
+
+#Huvudsida h4 {
+    color: white;
+}
+
+#Huvudsida h3 {
+    color: white;
 }
 
 #Huvudsida footer {
     grid-area: f;
-    background-color: purple;
+    background-color: black;
 }
 
 #Menysida #as1 {
